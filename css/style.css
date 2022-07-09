@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Montserrat:wght@300;700&family=Playfair+Display&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    padding: 50px;
+    background-image: linear-gradient(to right, lightblue, pink);
+    background-color: #FBF8F1;
+
+}
+
+
+h1 {
+    text-transform: uppercase;
+    font-size: 56px;
+    margin-bottom: 20px;
+    display: inline-block;
+    background-image: linear-gradient(to right, orchid, aquamarine, hotpink, violet, lightskyblue);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    width: 200px;
+    height: 400px;
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid #fff;
+    border-radius: 5px;
+
+}
+
+.grid div {
+    height: 20px;
+    width: 20px;
+
+
+}
+
+.tetromino {
+    background-color: blue;
+}
+
+.mini-grid {
+    margin-left: 50px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eee;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    padding: 15px;
+
+}
+
+.mini-grid div {
+    width: 20px;
+    height: 20px;
+
+}
+
+#start-button {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background-color: #D6EFED;
+    color: #A0BCC2;
+    border: 1px solid #D6EFED;
+    border-radius: 40px;
+    transition: all .3s;
+    font-weight: bold;
+
+
+}
+
+#start-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px 1px;
+}
+
+#start-button:active,
+#startbutton:focus {
+
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, .2);
+}
+
+h3 {
+    font-size: 32px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+#score {
+    font-size: 32px;
+    color: #fff;
+}
